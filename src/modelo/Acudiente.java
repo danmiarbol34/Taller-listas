@@ -33,7 +33,7 @@ public class Acudiente implements Interfaces {
         this.telefono = telefono;
     }
 
-    @Override
+    
     public String getInfo() {
         String Info = "";
         Info = "dato del acudiente:\n"

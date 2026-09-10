@@ -8,7 +8,7 @@ package modelo;
  *
  * @author omar5
  */
-public class Estudiante {
+public class Estudiante implements Interfaces{
 
     private long identificacion;
     private String nombre, sexo;
@@ -71,6 +71,7 @@ public class Estudiante {
     public void setAcudiente(Acudiente acudiente) {
         this.acudiente = acudiente;
     }
+    
     
     
 }
