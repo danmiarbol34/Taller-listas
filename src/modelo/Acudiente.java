@@ -8,7 +8,7 @@ package modelo;
  *
  * @author omar5
  */
-public class Acudiente {
+public class Acudiente implements Interfaces {
 
     private String Nombre, telefono;
 
@@ -33,6 +33,7 @@ public class Acudiente {
         this.telefono = telefono;
     }
 
+    @Override
     public String getInfo() {
         String Info = "";
         Info = "dato del acudiente:\n"
