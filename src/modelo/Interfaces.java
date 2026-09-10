@@ -4,10 +4,7 @@
  */
 package modelo;
 
-/**
- *
- * @author Juan Mangones
- */
 public interface Interfaces {
-    
+
+    public String getInfo();
 }

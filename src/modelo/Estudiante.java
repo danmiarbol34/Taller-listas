@@ -8,7 +8,7 @@ package modelo;
  *
  * @author omar5
  */
-public class Estudiante implements Interfaces{
+public class Estudiante implements Interfaces {
 
     private long identificacion;
     private String nombre, sexo;
@@ -71,7 +71,19 @@ public class Estudiante implements Interfaces{
     public void setAcudiente(Acudiente acudiente) {
         this.acudiente = acudiente;
     }
-    
-    
-    
+
+    @Override
+    public String getInfo() {
+        String info = "";
+
+        info = "Informacion del estudiante:\n"
+                + "Identificacion: " + getIdentificacion()
+                + "\n Nombre: " + getNombre()
+                + "\n Sexo: " + getSexo()
+                + "\n Edad: " + getEdad()
+                + "\n Grado: " + getGrado()
+                + getAcudiente().getInfo();
+        return info;
+    }
+
 }
